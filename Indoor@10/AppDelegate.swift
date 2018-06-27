@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Indoor@10
 //
-//  Created by Donald Mactavish on 24/06/2018.
+//  Created by Faiyaz Chowdhury on 24/06/2018.
 //  Copyright © 2018 Inverted Circle. All rights reserved.
 //
 
