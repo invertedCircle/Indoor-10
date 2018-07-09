@@ -28,8 +28,7 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let newVC = storyboard?.instantiateInitialViewController() as! HomeViewController
-        newVC.nameField = "adf"
+
     }
 
 }

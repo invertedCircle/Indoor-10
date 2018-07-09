@@ -10,11 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    var nameField = String()
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = nameField;
         // Do any additional setup after loading the view.
     }
 
