@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8537557920F521D000507DFA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537557820F521D000507DFA /* SearchController.swift */; };
+		8537557B20F522C000507DFA /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537557A20F522C000507DFA /* ChatController.swift */; };
+		8537557D20F522EE00507DFA /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537557C20F522EE00507DFA /* FeedController.swift */; };
+		8537557F20F5232800507DFA /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537557E20F5232800507DFA /* AccountController.swift */; };
+		8537558120F5239A00507DFA /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537558020F5239A00507DFA /* SettingController.swift */; };
+		8537558520F52A1700507DFA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8537558420F52A1700507DFA /* Player.swift */; };
 		CC415D4F20E00C6C005C0BB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC415D4E20E00C6C005C0BB5 /* AppDelegate.swift */; };
 		CC415D5120E00C6C005C0BB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC415D5020E00C6C005C0BB5 /* ViewController.swift */; };
 		CC415D5420E00C6C005C0BB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC415D5220E00C6C005C0BB5 /* Main.storyboard */; };
@@ -15,7 +21,6 @@
 		CC415D5C20E00C6D005C0BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC415D5A20E00C6D005C0BB5 /* LaunchScreen.storyboard */; };
 		CC415D6720E00C6D005C0BB5 /* Indoor_10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC415D6620E00C6D005C0BB5 /* Indoor_10Tests.swift */; };
 		CC415D7220E00C6D005C0BB5 /* Indoor_10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC415D7120E00C6D005C0BB5 /* Indoor_10UITests.swift */; };
-		CC415D8020E168A9005C0BB5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC415D7F20E168A9005C0BB5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8537557820F521D000507DFA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		8537557A20F522C000507DFA /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		8537557C20F522EE00507DFA /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		8537557E20F5232800507DFA /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		8537558020F5239A00507DFA /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		8537558420F52A1700507DFA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		CC415D4B20E00C6C005C0BB5 /* Indoor@10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indoor@10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC415D4E20E00C6C005C0BB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC415D5020E00C6C005C0BB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +61,6 @@
 		CC415D6D20E00C6D005C0BB5 /* Indoor@10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indoor@10UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC415D7120E00C6D005C0BB5 /* Indoor_10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indoor_10UITests.swift; sourceTree = "<group>"; };
 		CC415D7320E00C6D005C0BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC415D7F20E168A9005C0BB5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,15 @@
 		CC415D4D20E00C6C005C0BB5 /* Indoor@10 */ = {
 			isa = PBXGroup;
 			children = (
+				8537557820F521D000507DFA /* SearchController.swift */,
+				8537558420F52A1700507DFA /* Player.swift */,
 				CC415D4E20E00C6C005C0BB5 /* AppDelegate.swift */,
 				CC415D5020E00C6C005C0BB5 /* ViewController.swift */,
 				CC415D5220E00C6C005C0BB5 /* Main.storyboard */,
-				CC415D7F20E168A9005C0BB5 /* HomeViewController.swift */,
+				8537557E20F5232800507DFA /* AccountController.swift */,
+				8537558020F5239A00507DFA /* SettingController.swift */,
+				8537557C20F522EE00507DFA /* FeedController.swift */,
+				8537557A20F522C000507DFA /* ChatController.swift */,
 				CC415D5820E00C6D005C0BB5 /* Assets.xcassets */,
 				CC415D5A20E00C6D005C0BB5 /* LaunchScreen.storyboard */,
 				CC415D5D20E00C6D005C0BB5 /* Info.plist */,
@@ -262,10 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8537558120F5239A00507DFA /* SettingController.swift in Sources */,
 				CC415D5120E00C6C005C0BB5 /* ViewController.swift in Sources */,
+				8537557920F521D000507DFA /* SearchController.swift in Sources */,
 				CC415D4F20E00C6C005C0BB5 /* AppDelegate.swift in Sources */,
+				8537557F20F5232800507DFA /* AccountController.swift in Sources */,
 				CC415D5720E00C6C005C0BB5 /* Indoor_10.xcdatamodeld in Sources */,
-				CC415D8020E168A9005C0BB5 /* HomeViewController.swift in Sources */,
+				8537557B20F522C000507DFA /* ChatController.swift in Sources */,
+				8537558520F52A1700507DFA /* Player.swift in Sources */,
+				8537557D20F522EE00507DFA /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,17 +1,18 @@
 //
-//  HomeViewController.swift
+//  AccountController.swift
 //  Indoor@10
 //
-//  Created by Faiyaz Chowdhury on 25/06/2018.
+//  Created by Faiyaz Chowdhury on 7/10/18.
 //  Copyright © 2018 Inverted Circle. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class AccountController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
