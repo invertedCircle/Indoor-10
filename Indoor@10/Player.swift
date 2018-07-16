@@ -13,10 +13,12 @@ class Player {
     var password: String
     var ranking: Int
     var friends: [Player]
+    var photo: Int
     init(name: String, password: String) {
         playID = name
         self.password = password
         ranking = 0
         friends = [Player]()
+        photo = 0
     }
 }

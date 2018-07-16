@@ -8,8 +8,27 @@
 
 import UIKit
 
-class FeedController: UITableViewController {
-
+class FeedController: UITableViewController, UIImagePickerControllerDelegate, UINavigationBarDelegate {
+    @IBOutlet weak var feedImage: UIImageView!
+    
+    @IBAction func takePhoto(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self as? UIImagePickerControllerDelegate & UINavigationControllerDelegate
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker : UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            feedImage.contentMode = .scaleToFill
+            feedImage.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
