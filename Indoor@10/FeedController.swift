@@ -8,8 +8,11 @@
 
 import UIKit
 
+
 class FeedController: UITableViewController, UIImagePickerControllerDelegate, UINavigationBarDelegate {
 
+    var feeds = [Feed]()
+    
     @IBAction func searchGame(_ sender: Any) {
     }
     @IBOutlet weak var feedImage: UIImageView!
@@ -34,9 +37,14 @@ class FeedController: UITableViewController, UIImagePickerControllerDelegate, UI
         picker.dismiss(animated: true, completion: nil)
     }
     
+    func loadSampleFeed() {
+        feeds += [Feed(message: "Hello World"), Feed(message: "I am the second Feed")]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loadSampleFeed()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -52,24 +60,22 @@ class FeedController: UITableViewController, UIImagePickerControllerDelegate, UI
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return feeds.count
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
 
         // Configure the cell...
-
+        let feed = feeds[indexPath.row]
+        cell.feedEntry.text = feed.message
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
