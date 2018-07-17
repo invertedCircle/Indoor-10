@@ -9,8 +9,10 @@
 import UIKit
 
 class FeedController: UITableViewController, UIImagePickerControllerDelegate, UINavigationBarDelegate {
+
+    @IBAction func searchGame(_ sender: Any) {
+    }
     @IBOutlet weak var feedImage: UIImageView!
-    
     @IBAction func takePhoto(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
             let imagePicker = UIImagePickerController()
@@ -19,6 +21,9 @@ class FeedController: UITableViewController, UIImagePickerControllerDelegate, UI
             imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func sendFeedText(_ sender: Any) {
     }
     
     func imagePickerController(_ picker : UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
