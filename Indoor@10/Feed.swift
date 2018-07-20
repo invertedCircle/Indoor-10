@@ -9,16 +9,16 @@
 import Foundation
 
 class Feed {
-    var poster: Int
+    var user: String
     var message: String
-    var photo: Int
+    var image: Int
     var location: Int
-    var time: Int
-    init(message: String, photo: Int = 0) {
-        poster = 0
+    var dateTime: Date
+    init(user: String = "", message: String, photo: Int = 0) {
+        self.user = user
         location = 0
-        time = 0
+        dateTime = Date()
         self.message = message
-        self.photo = photo;
+        self.image = photo;
     }
 }

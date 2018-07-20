@@ -13,8 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var playIDInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var nameField: UILabel!
+    var saver = UserSetting(playID: "", password: "", loggedIn: false)
     @IBAction func buttonLogin(_ sender: UIButton) {
+        let username = playIDInput.text
+        let password = passwordInput.text
         
+        if (username == "" || password == "") {
+            return
+        }
+        
+        DoLogin(username!, password!)
+    }
+    
+    func DoLogin(_ user: String, _ psw: String) {
+
     }
     
     override func viewDidLoad() {

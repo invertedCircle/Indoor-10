@@ -12,6 +12,11 @@ class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var feedImage: UIImageView!
     @IBOutlet weak var feedEntry: UILabel!
+    @IBOutlet weak var feedUser: UILabel!
+    @IBOutlet weak var feedDate: UILabel!
+    @IBOutlet weak var feedLocation: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

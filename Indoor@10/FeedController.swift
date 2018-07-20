@@ -38,7 +38,7 @@ class FeedController: UITableViewController, UIImagePickerControllerDelegate, UI
     }
     
     func loadSampleFeed() {
-        feeds += [Feed(message: "Hello World"), Feed(message: "I am the second Feed")]
+        feeds += [Feed(user: "Firewolf", message: "Hello World"), Feed(user: "Firewolf", message: "I am the second Feed")]
     }
     
     override func viewDidLoad() {
@@ -60,7 +60,7 @@ class FeedController: UITableViewController, UIImagePickerControllerDelegate, UI
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,11 +69,19 @@ class FeedController: UITableViewController, UIImagePickerControllerDelegate, UI
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as! FeedTableViewCell
+        let cellIdentifier = "FeedListCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FeedTableViewCell
 
         // Configure the cell...
         let feed = feeds[indexPath.row]
         cell.feedEntry.text = feed.message
+        // cell.feedImage.image = feed.image
+        cell.feedUser.text = feed.user
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        cell.feedDate.text = dateFormatterGet.string(from: feed.dateTime as Date)
+        // cell.feedTime.text = time(feed.dateTime)
+        // cell.feedLocation.text = text(feedLocation)
         return cell
     }
 
